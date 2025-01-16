@@ -157,14 +157,15 @@ rezultats_teksts = a.create_text(150, 50, fill='white')
 def parvietot_kugi(notikums):
     x, y = iegut_koordinates(kuģa_id)
 
-    if notikums.keysym == 'Up' and y - KUĢA_RĀDIUSS > 0:
+    if (notikums.keysym == 'Up' or notikums.keysym == 'w' or notikums.keysym == 'W') and y - KUĢA_RĀDIUSS > 0:
         a.move(kuģa_id, 0, -KUĢA_ĀTRUMS)
-    elif notikums.keysym == 'Down' and y + KUĢA_RĀDIUSS < screen_height:
+    elif (notikums.keysym == 'Down' or notikums.keysym == 's' or notikums.keysym == 'S') and y + KUĢA_RĀDIUSS < screen_height:
         a.move(kuģa_id, 0, KUĢA_ĀTRUMS)
-    elif notikums.keysym == 'Left' and x - KUĢA_RĀDIUSS > 0:
+    elif (notikums.keysym == 'Left' or notikums.keysym == 'a' or notikums.keysym == 'A') and x - KUĢA_RĀDIUSS > 0:
         a.move(kuģa_id, -KUĢA_ĀTRUMS, 0)
-    elif notikums.keysym == 'Right' and x + KUĢA_RĀDIUSS < screen_width:
+    elif (notikums.keysym == 'Right' or notikums.keysym == 'd' or notikums.keysym == 'D') and x + KUĢA_RĀDIUSS < screen_width:
         a.move(kuģa_id, KUĢA_ĀTRUMS, 0)
+
 
 def izveidot_burbuli():
     x = screen_width + ATSTARPE
