@@ -265,3 +265,10 @@ end_game()
 end_game()
 
 logs.mainloop()
+
+#Pievienoju attēlu zēmūdenei bet zem attēla ir aplis kas uztver visus burbulus ka ari ievero speles borderus
+#Arī pievienoju lai varētu pārvietoties ar wasd pogām kā arī jigadijumā ir ieslēgts caps lock vai vienkārši tur shift tad strādās parvietošanās jo var parvietoties ar lielajiem WASD burtiem arī
+#Pievienoju arī sarkanos burbuļus kuriem zemūdene uzbraucot virsū beidzas spēle
+#Kad beidzas spēle tiek parādīts high scores un atlikušais laiks kā arī pogas quit game un play again
+#Pašu spēles width un height es arī nomainīju lai ietilptu pa visu ekrānu
+
